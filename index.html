@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StartUP Panda - Share Your Idea</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>StartUP Panda</h1>
+    <p>Share Your Startup Idea here</p>
+  </header>
+  <main>
+    <form id="ideaForm" method="post" action="contact.php">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="phone">Your Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required><br><br>
+      <label for="idea">Your Startup Idea:</label><br>
+      <textarea id="idea" name="idea" rows="4" cols="50" required></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="ideaList">
+      <!-- Startup ideas will be displayed here -->
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
